@@ -1,0 +1,157 @@
+{
+  "taskOper": "OR",
+  "groupByLayer": false,
+  "zoomto": true,
+  "zoombackto": false,
+  "allowCustom": false,
+  "allowResetAll": false,
+  "allowTurnOffAll": false,
+  "filters": [
+    {
+      "layerId": "064c922833af47c08bcee0d8a124d33e",
+      "url": "https://services3.arcgis.com/ph3kXj7c6Bqf3eeX/arcgis/rest/services/Lokasi_SMP_dan_SMA_Negeri_DKI_Jakarta_WFL1/FeatureServer/0",
+      "name": "Lokasi_SMP_SMANegeri_DKIJakarta",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "JENJANG",
+              "label": "JENJANG",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Jenjang Pendidikan",
+              "hint": "",
+              "cascade": "all"
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "WILAYAH",
+              "label": "WILAYAH",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Kab/Kota",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "KECAMATAN_",
+              "label": "KECAMATAN_",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Kecamatan",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "KELURAHAN_",
+              "label": "KELURAHAN_",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Kelurahan",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "NAMA_SATUA",
+              "label": "NAMA_SATUA",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Nama Sekolah",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": "",
+        "displaySQL": ""
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": false,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    }
+  ]
+}
